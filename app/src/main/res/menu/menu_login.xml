@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_events"
+                android:icon="@drawable/ic_event_black"
+                android:title="@string/menu_events" />
+
+            <item
+                android:id="@+id/nav_mytickets"
+                android:icon="@mipmap/ic_mytickets_black"
+                android:title="@string/menu_mytickets" />
+
+
+            <item
+                android:id="@+id/nav_accountsetting"
+                android:layout_height="match_parent"
+                android:icon="@mipmap/accountsetting"
+                android:title="Account Setting"
+                />
+
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@mipmap/ic_logout_black"
+                android:title="Sign Out"
+                />
+        </group>
+
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_aboutus"
+                    android:icon="@mipmap/ic_aboutus_black"
+                    android:title="@string/menu_aboutus" />
+            </menu>
+        </item>
+</menu>

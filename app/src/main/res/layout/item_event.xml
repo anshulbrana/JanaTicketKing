@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="200dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/eventCardView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginRight="22dp"
+        app:cardCornerRadius="18dp">
+
+        <ImageView
+            android:id="@+id/bannerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+             />
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="22dp">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosissemibold"
+            android:text="Event detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <TextView
+            android:id="@+id/eventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eventTitle"
+            android:fontFamily="@font/dosisregular"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+    </RelativeLayout>
+
+</LinearLayout>

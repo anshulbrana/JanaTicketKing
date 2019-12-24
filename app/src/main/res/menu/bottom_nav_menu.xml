@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@mipmap/ic_account_black"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_changepassword"
+        android:icon="@mipmap/ic_account_changepassword"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_privacy"
+        android:icon="@mipmap/ic_account_privacy"
+        android:title="@string/title_notifications" />
+    <item
+        android:id="@+id/navigation_deleteaccount"
+        android:icon="@mipmap/ic_account_deleteaccount"
+        android:title="@string/title_notifications" />
+
+</menu>

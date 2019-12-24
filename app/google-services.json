@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "464204606613",
+    "firebase_url": "https://janaticketking-27c23.firebaseio.com",
+    "project_id": "janaticketking-27c23",
+    "storage_bucket": "janaticketking-27c23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464204606613:android:d3a6f84aa7817649",
+        "android_client_info": {
+          "package_name": "com.example.janaticketking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464204606613-tnfcnt8u8p4ai55rkorne0t7bulgmgre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.janaticketking",
+            "certificate_hash": "5b5fbd8d1f437e1d4856819522b4667775a11e41"
+          }
+        },
+        {
+          "client_id": "464204606613-9d3g0ll7ohke5jhjqcb8c7nq78g45lq5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyeCE1bYSH6zQ9Gh_k57QhfH0loDIrg-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464204606613-9d3g0ll7ohke5jhjqcb8c7nq78g45lq5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

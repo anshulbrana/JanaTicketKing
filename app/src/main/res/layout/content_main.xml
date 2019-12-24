@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFEF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/mainMargin"
+        android:layout_marginTop="@dimen/mainMargin"
+        android:layout_marginRight="@dimen/mainMargin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/displayUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisbold"
+                android:text="Ticket King"
+                android:textSize="@dimen/testSizeHeading" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/displayUserName"
+                android:layout_marginTop="@dimen/mainMargin"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="18dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_search_black"
+                    android:drawablePadding="14dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:fontFamily="@font/dosisregular"
+                    android:hint="Search"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="@dimen/testSizeNormal" />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/mainMargin"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/categoryFirst"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FA018E"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/category_music" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/categorySecond"
+                android:layout_width="80dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#00EB61"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/category_movie" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/categoryThird"
+                android:layout_width="80dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FFAE00"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/category_sports" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/categoryFourth"
+                android:layout_width="80dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#00B3E7"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/category_education" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/categoryFifth"
+                android:layout_width="80dp"
+                android:layout_height="62dp"
+                android:layout_marginLeft="18dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#E65D00"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/category_party" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dosisregular"
+                    android:text="Music    "
+                    android:textSize="@dimen/testSizeNormal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dosisregular"
+                    android:gravity="center"
+                    android:text="Movie  "
+                    android:textSize="@dimen/testSizeNormal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dosisregular"
+                    android:gravity="center"
+                    android:text="Sports"
+                    android:textSize="@dimen/testSizeNormal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dosisregular"
+                    android:gravity="center"
+                    android:text=" Educational"
+                    android:textSize="@dimen/testSizeNormal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/dosisregular"
+                    android:gravity="center"
+                    android:text="      Parties"
+                    android:textSize="@dimen/testSizeNormal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="18dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true" />
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:padding="10dp"
+                app:centered="true"
+                app:fillColor="#df0623"
+                app:pageColor="#fff"
+                app:snap="false" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mainMargin"
+            android:fontFamily="@font/dosissemibold"
+            android:text="Recommend"
+            android:textSize="@dimen/testSizeHeading"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/upcomingEventRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/mainMargin"
+            android:layout_marginBottom="10dp"
+            tools:listitem="@layout/item_event" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#F3EFEF">
+
+            <ImageView
+                android:id="@+id/postEvent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="@dimen/mainMargin"
+                android:scaleType="fitXY"
+                android:src="@drawable/concertcrowd" />
+
+            <RelativeLayout
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/dosisbold"
+                    android:gravity="center"
+                    android:text="Post Your\n   Event"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="92dp"
+                android:layout_height="72dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:fontFamily="@font/dosissemibold"
+                    android:gravity="center"
+                    android:text="PRICE\nMATCH"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/mainMargin"
+                    android:layout_marginBottom="@dimen/mainMargin"
+                    android:fontFamily="@font/dosissemibold"
+
+                    android:text="GUARANTEE"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

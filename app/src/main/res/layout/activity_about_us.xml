@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AboutUsActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#39B34A">
+
+        <ImageView
+
+            android:layout_width="180dp"
+            android:layout_height="@dimen/logo_w_h"
+            android:layout_gravity=""
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Ticket king"
+            android:src="@mipmap/kinglogo"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="1dp"
+        android:paddingLeft="2dp"
+        >
+
+
+        <TextView
+            android:id="@+id/sendmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:drawableLeft="@drawable/ic_email_black"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/dosissemibold"
+            android:text="Email\ninfo@ticketking.com.au"
+            android:textColor="@color/white"
+            android:textSize="@dimen/testSizeNormal"
+            android:layout_marginRight="16dp"/>
+
+        <TextView
+            android:id="@+id/sendcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_call_black"
+            android:drawableTint="@color/white"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/dosissemibold"
+            android:text="Call\n0423743157"
+            android:textColor="@color/white"
+            android:textSize="@dimen/testSizeNormal" />
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosisbold"
+            android:text="F.A.Q and Contact Information"
+            android:textColor="@color/white"
+            android:textSize="@dimen/testSizeHeading" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:fontFamily="@font/dosisbold"
+            android:paddingTop="5dp"
+            android:text="For user"
+            android:paddingLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:elevation="0dp"
+
+            android:id="@+id/expandableButton1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton1"
+            android:paddingRight="10dp"
+            android:text="WHAT TYPES OF PAYMENT DO YOU ACCEPT?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:elevation="0dp"
+            android:id="@+id/expandableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton1"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="We accept credit card/master card payment as well as we accept stripe and paypal."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout1"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton2"
+            android:paddingRight="10dp"
+            android:text="CAN I BUY TICKETS OFFLINE? HOW?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton2"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="No. You can’t buy ticket on offline mode."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout2"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton3"
+            android:paddingRight="10dp"
+            android:text="HOW WILL I GET MY TICKETS IF I BUY THEM ONLINE?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton3"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="You can direcly download the invoice after purchase as well as you can get ticket through email."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout3"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton4"
+            android:paddingRight="10dp"
+            android:text="WHAT IF MY TICKETS ARE LOST OR STOLEN?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton4"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="No need to worry in such case user can download ticket from their email accounts."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout4"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton5"
+            android:paddingRight="10dp"
+            android:text="WILL I NEED TO REGISTER/HAVE AN ACCOUNT?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton4"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="Only if you wish to create and manage your own Events. If you simply want to make a booking for an event you don’t need an account."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableLayout5"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton6"
+            android:paddingRight="10dp"
+            android:text="WHAT ABOUT REFUNDS?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton5"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="Any potential refunds relating to events are handled solely by the Event Organiser who creates and manages."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:fontFamily="@font/dosisbold"
+            android:paddingTop="5dp"
+            android:text="Event organizer"
+            android:paddingLeft="16dp"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeHeading"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/expandableButton7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton7"
+            android:paddingRight="10dp"
+            android:text="HOW LONG DOES IT TAKE TO REGISTER?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton6"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="It takes just a few minutes for event organisers to register for their complimentary ticketking  account. Please ensure you have a valid email address to receive the activation email we will send you to get started. Please note that only event organisers need to register for an account. You do not need to register to buy tickets."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton8"
+            android:paddingRight="10dp"
+            android:text="WHAT EVENTS CAN I CREATE USING TICKETKING?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton7"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="Ticketking is suitable for events of all types and sizes. You can use ticketking to create school events, theatre performances, charity fundraisers, dance school events, festivals, sport club events, university club events, rotary and lions club events, markets, racing club meets, choirs, workshops and seminars, council run events, scouts and girl guide events, business and association events, visitor and information centre events, cooking school registrations, music concert ticket sales and much more"
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton9"
+            android:paddingRight="10dp"
+            android:text="WHAT'S THE CATCH ABOUT IT BEING FREE?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton8"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="There is no catch. In fact we encourage you to try us out and see for yourself how easy the ticketking site is to both create and manage your next event or to simply book an event."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton10"
+            android:paddingRight="10dp"
+            android:text="HOW DO I GET PEOPLE TO BOOK MY EVENT?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton9"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="Whenever you create a new event it is given its own unique ticketking URL (web address). To let people know about your event all you need to do is email them the link. By simply clicking on the link they’ll go directly to your event web page ready for booking."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/expandableButton11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/expandable_question"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:fontFamily="@font/dosissemibold"
+            android:onClick="expandableButton11"
+            android:paddingRight="10dp"
+            android:text="WHAT EQUIPMENT AND SOFTWARE DO I NEED TO START USING TICKETKING?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/expandableButton10"
+            android:background="@color/white"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="accelerate"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisregular"
+                android:text="All you need is a computer, tablet or mobile phone with internet access to get going."
+                android:textColor="@color/black"
+                android:textSize="@dimen/testSizeNormal" />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+

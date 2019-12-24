@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentAccount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AccountFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosisbold"
+            android:text="Account"
+            android:textSize="@dimen/testSizeHeading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dosissemibold"
+            android:text="Username"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <EditText
+            android:id="@+id/fragmentUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosisregular"
+            android:hint="User Name"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dosissemibold"
+            android:text="First Name"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <EditText
+            android:id="@+id/fragmentFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosisregular"
+            android:hint="First Name"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dosissemibold"
+            android:text="Last Name"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <EditText
+            android:id="@+id/fragmentLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosisregular"
+            android:hint="Last Name"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/dosissemibold"
+            android:text="Email Address"
+            android:textSize="@dimen/testSizeNormal" />
+
+        <EditText
+            android:id="@+id/fragmentEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dosisregular"
+            android:hint="Email Address"
+            android:textSize="@dimen/testSizeNormal"
+            android:inputType="textEmailAddress"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fragmentUpdateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/dosisbold"
+                android:layout_marginTop="12dp"
+                android:text="Update Account"
+                android:textSize="@dimen/testSizeNormal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</FrameLayout>
